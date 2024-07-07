@@ -34,3 +34,43 @@ ed099d42384823742bba0bf9a72b53b55c9e2e38 refs/tags/v1.7.2
 98cb6bf42e086f6af920b965c38cacc07402d51b refs/tags/v1.8.0
 b4617d0b9670ad14039b2739167fd35a60f557c5 refs/tags/v1.8.1
 ```
+
+### Third party versioning
+
+To get specific version:
+
+```sh
+go get github.com/gorilla/mux@v1.7.4
+```
+
+To back to latest:
+
+```sh
+go get github.com/gorilla/mux@latest
+```
+
+To update the package:
+
+```sh
+go get -u github.com/gorilla/mux
+```
+
+### To keep the local version using vendors
+
+It can be used in case local copy of dependencies are needed. The command creates a new subdirectory which persists all dependencies:
+
+```sh
+go mod vendor
+```
+
+Also to make sure go uses stored depends within vendor subdirectories, following command can be used:
+
+```sh
+go build -mod vendor
+```
+
+To disable vendoring explicitly, following can be used:
+
+```sh
+go build -mod readonly
+```
