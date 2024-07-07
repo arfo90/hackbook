@@ -1,6 +1,3 @@
-Here's the content formatted as a Markdown file:
-
-```markdown
 # Go
 
 ## Packaging, module and Project structure
@@ -36,5 +33,4 @@ ed099d42384823742bba0bf9a72b53b55c9e2e38 refs/tags/v1.7.2
 75dcda0896e109a2a22c9315bca3bb21b87b2ba5 refs/tags/v1.7.4
 98cb6bf42e086f6af920b965c38cacc07402d51b refs/tags/v1.8.0
 b4617d0b9670ad14039b2739167fd35a60f557c5 refs/tags/v1.8.1
-```
 ```
