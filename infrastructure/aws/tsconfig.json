@@ -30,6 +30,8 @@
   ],
   "exclude": [
     "node_modules",
-    "cdktf.out"
+    "cdktf.out",
+    "**/*.js",
+    "**/*.d.ts"
   ]
 }

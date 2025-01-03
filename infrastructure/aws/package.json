@@ -15,7 +15,8 @@
     "test:watch": "jest --watch",
     "upgrade": "npm i cdktf@latest cdktf-cli@latest",
     "upgrade:next": "npm i cdktf@next cdktf-cli@next",
-    "deploy": "cdktf deploy"
+    "deploy": "cdktf deploy",
+    "cleanup": "find . -name '*.d.ts' -type f -delete && find . -name '*.js' -type f -delete"
   },
   "engines": {
     "node": ">=18.0"
@@ -28,10 +29,12 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.10.5",
+    "@types/yn": "^3.0.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "yn": "^5.0.0"
   }
 }
